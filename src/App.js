@@ -3,15 +3,17 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import About from './pages/About'; // Asegúrate de importar los componentes necesarios
-import Services from './pages/Services'; // Asegúrate de importar los componentes necesarios
-import Contact from './pages/Contact'; // Asegúrate de importar los componentes necesarios
+import About from './pages/About';
+import Services from './pages/Services';
+import Contact from './pages/Contact';
 
 function App() {
   return (
     <Router>
       <div className="App">
+        {/* Encabezado de la aplicación */}
         <Header />
+        {/* Definición de las rutas */}
         <Routes>
           {/* Ruta para la página de inicio */}
           <Route path="/" element={<Home />} />
@@ -20,6 +22,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        {/* Pie de página de la aplicación */}
         <Footer />
       </div>
     </Router>
@@ -27,4 +30,5 @@ function App() {
 }
 
 export default App;
+
 
