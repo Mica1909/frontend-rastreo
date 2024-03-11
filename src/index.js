@@ -1,7 +1,7 @@
 import React from 'react';
-import { createRoot } from 'react-dom';
+import { createRoot } from 'react-dom/client'; // Importa createRoot desde 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom';
-import App from './App'; // Asegúrate de importar el componente App
+import App from './App';
 
 const root = createRoot(document.getElementById('root'));
 
